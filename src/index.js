@@ -37,8 +37,10 @@ function createMarkup({name: {official}, capital, population, flags: {svg}, lang
    
     return `
     <div class ="country-card">
+    <div class ="flag-name-wrap">
     <img src=${svg} class="article-img" width=40 height=20>
     <h2 class="country-title">${official}</h2>
+    </div>
     <p class="country-Capital"><span class="span-text">Capital:</span> ${capital}</p>
     <p class="country-Population"><span class="span-text">Population:</span> ${population}</p>
     

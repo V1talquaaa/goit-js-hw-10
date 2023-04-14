@@ -25,6 +25,10 @@ body {
 
 .article-img {
 position: absolute;
-opacity: 50%;
+display: inline-block;
+
 }
 
+.flag-name-wrap {
+  display: flex;
+}
