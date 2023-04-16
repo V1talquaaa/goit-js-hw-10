@@ -22,7 +22,7 @@ function searchByCountryName(evt) {
         onError();
     };
 
-    markup = data.length 
+    const markup = data.length 
     ? data.reduce((markup, country) => markup + createMarkup(country), "")
     : "";
     
