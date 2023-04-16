@@ -24,10 +24,13 @@ body {
 }
 
 .article-img {
-display: inline-block;
+display: block;
+margin-right: 20px;
 
 }
 
 .flag-name-wrap {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  
 }

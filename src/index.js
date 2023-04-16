@@ -22,14 +22,13 @@ function searchByCountryName(evt) {
         onError();
     };
 
-    const markup = data.reduce(
-        (markup, country) => markup + createMarkup(country), "");
+    markup = data.length 
+    ? data.reduce((markup, country) => markup + createMarkup(country), "")
+    : "";
     
     updateNewsList(markup);
 
  })
-//  .catch(setTimeout(onError, 1000));
-
 
 };
 
@@ -45,7 +44,6 @@ function createMarkup({name: {official}, capital, population, flags: {svg}, lang
     <p class="country-Population"><span class="span-text">Population:</span> ${population}</p>
     
     <p class="country-Languages"><span class="span-text">Languages:</span> ${Object.values(languages)}</p>
-
     </div>
     `
 }
